@@ -1,0 +1,688 @@
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+body {
+    background-image: url('../img/Witcher_3_fon.jpg'); 
+    background-size: cover; /* или contain, если хотите, чтобы изображение не обрезалось */
+    background-position: center; /* центрирует изображение */
+    background-repeat: no-repeat; /* предотвращает повторение изображения */
+    background-attachment: fixed; /* фиксирует фон при прокрутке */
+  }
+
+  .logo {
+  display: block;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.header__burger-btn {
+  display: none;
+}
+
+/* Кнопка возрата на верх */
+.scrollTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  background-color: black;
+  color: red;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  opacity: 0.7;
+  transition: opacity 0.3s;
+  z-index: 1000;
+  display: none; /* по умолчанию скрыта */
+}
+
+.scrollTopBtn:hover {
+  opacity: 1;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/фон.jpg");
+  min-height: 100%; 
+  margin: 0px 250px;
+  }
+
+a {
+  color: red;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: 1px solid blueviolet;
+}
+
+iframe {
+  border:none ;
+}
+
+
+
+
+
+footer {
+  display: flex;
+background-image: url("../img/арт6.jpg");
+background-size:contain;
+background-repeat: no-repeat;
+background-color: black;
+background-position: center;
+height: 300px;
+border-radius: 20px;
+margin-top: auto;
+}
+
+.footer-content  {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+    color: white;
+    font-size: 16px;
+    
+  
+}
+
+.article_index {
+  font-size: 25px;
+  text-align: center;
+
+}
+
+.main_p {
+  font-weight: bold;
+  margin: 50px 0px;
+}
+.img_article {
+  display: flex;
+    justify-content: center; /* Горизонтальное выравнивание по центру */
+    background-color: black;
+}
+
+
+
+.nav {
+  font-size: 20px;
+    display: flex;           /* Включаем Flexbox для навигации */
+  }
+
+
+
+.nav a {
+  text-decoration: none;
+
+}
+
+/* Контейнер заголовка */
+.header__container {
+    display: flex; /* Используем flexbox для гибкого размещения элементов */
+    justify-content: space-between; 
+    align-items: center; /* Выравниваем элементы по вертикали по центру */
+    position: sticky;
+    top: 0;
+    background-color:black ;
+  }
+
+/* Список навигации */
+.nav-list {
+display: flex;
+justify-content: flex-start;
+}
+
+
+
+/* Элементы списка навигации */
+.nav-list li {
+  padding: 0px 20px;
+}
+
+
+a:visited /*для изменения стиля ссылок, которые уже были посещены*/ {
+  color:aqua;
+}
+
+a:hover /*используется для изменения стиля элемента при наведении*/ {
+  color:green; /* Цвет ссылки при наведении */
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}
+
+
+
+
+/* Стили для статей */
+.article {
+    margin-bottom: 0; 
+}
+
+.article-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0; 
+}
+
+.article-image {
+    height: 400px;
+    width: 700px;
+    margin-right: 20px;
+}
+
+.article-text {
+    height: 400px;
+    overflow: auto;
+    background-color: #333333; 
+    color: #FFFFFF; 
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.marquee {
+  background-color: brown;
+  color: aquamarine;
+  font-size: 100px;
+}
+
+.article-title {
+    font-size: 24px;
+    background-color: brown;
+    padding: 25px 20px;
+    font-size: 24px;
+    color: aquamarine;
+    text-align: center;
+}
+
+.article p {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+.main_p {
+  font-size: 40px;
+  font-weight: bold;
+  background-color: brown;
+  color: greenyellow;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .wrapper {
+    display:flex;
+    margin: 0;
+    
+  }
+
+  .header__container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row; 
+    align-items: flex-start; 
+  }
+
+  .nav-list li {
+    margin: 10px 0; 
+  }
+  img {
+        display:flex ; 
+        margin: 0 auto; 
+        ;
+  }
+
+.article-title {
+      font-size: 24px;
+    background-color: brown;
+    padding: 15px 10px;
+    font-size: 16px;
+    color: aquamarine;
+    text-align: center;
+}
+
+/* .article-content {
+        flex-direction: column; 
+    } */
+
+    .article-image {
+      height: 200px;
+        margin-right: 0; /* Убираем отступ справа */
+    }
+
+    .article-text {
+        width: 100%; /* Текст на всю ширину */
+        
+    }
+
+  nav {
+      display: flex;
+      margin: 0 auto;
+    }
+
+    .social__icon {
+      display: flex;
+    }
+    .social__img {
+      outline: none;
+    }
+
+    .footer {
+      display: flex;
+      /* margin: 0px; */
+    }
+
+    
+  }
+
+.logo {
+    width: 100px;
+  }
+
+
+
+    .card {
+  display: block;
+  justify-content: center;
+  border-radius: 25px;
+} 
+
+
+
+
+
+
+
+@media (max-width: 1024px) {
+  .wrapper {
+  display: flex;
+  flex-direction: column;
+  
+.article-content {
+        flex-direction: column; 
+    }
+  
+}
+  .header__container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  
+  .marquee {
+  font-size: 40px;
+  }
+
+.main_p {
+  font-size: 25px;
+}
+#contacts li {
+      font-size: 30px;
+      margin-top: 50px;
+      
+    }
+
+    #contacts h2 {
+      font-size: 75px;
+    }
+
+    #about-me p {
+      font-size: 30px;
+      padding: 20px;
+    }
+
+    #about-me h2 {
+      font-size: 80px;
+    }
+    .footer-content {
+      font-size: 20px;
+    }
+    .article-image {
+      height: 400px;
+        margin-right: 0; /* Убираем отступ справа */
+    }
+  .header__burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+  .header__burger-btn span {
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 200px;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  /* Анимация для бургера при открытии */
+ .header__burger-btn.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.header__burger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger-btn.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+
+.nav-list {
+    display: block;
+}
+
+/* .nav_link {
+    color: white;
+    font-size: 21px;
+    display: block;
+    padding: 10px 0;
+} */
+}
+
+
+@media (max-width: 380px) {
+
+  .wrapper {
+    display:flex;
+  }
+
+    .header__container {
+      display: block;
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+  
+
+    .nav-list li {
+      display: flex;
+        margin: 10px 0; 
+    }
+    
+.article-content {
+        flex-direction: column; 
+    }
+
+
+    #contacts li {
+      font-size: 25px;
+      margin-top: 10px;
+      
+    }
+
+    #contacts h2 {
+      font-size: 50px;
+    }
+
+    #about-me p {
+      font-size: 30px;
+      padding: 10px;
+    }
+
+    #about-me h2 {
+      font-size: 50px;
+    }
+    .footer-content {
+      font-size: 17px;
+    }
+    
+  .header__burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 10;
+  }
+
+.header__burger-btn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: center;
+}
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 140px;
+    background-color:black;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 4px;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  /* Анимация для бургера при открытии */
+ .header__burger-btn.open span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.header__burger-btn.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger-btn.open span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+}
+
+.video__iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+}
+
+/* @keyframes block {
+  from {background-color: blue;}
+  25% {background-color: green;}
+  to {background-color: darkorchid;}
+}
+
+.block {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  transition: 300ms;
+}
+
+.block:hover {
+  background-color: red;
+  animation: block 4s ease-in-out infinite;
+} */
+
+/* Об авторе */
+
+.top {
+display: block;
+background-color: brown;
+}
+
+.about__h1 {
+  text-align: center;
+  color: aquamarine;
+}
+
+#author-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#author-details {
+  background-color:black;
+  color: #FFFFFF;
+  height: 67%;
+}
+
+
+
+#author-image {
+  width: 200px;
+  height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: black;
+}
+
+table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+table td:first-child {
+    font-weight: bold;
+    
+}
+
+#about-me {
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+#contacts {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#contacts li {
+    margin-bottom: 10px;
+}
+
+hr {
+  height: 3px;
+  background-color: #FFFFFF;
+}
